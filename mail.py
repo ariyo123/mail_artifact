@@ -98,7 +98,7 @@ for code in contents1[:]:
                     msg.attach(part)
             server = smtplib.SMTP('smtp.gmail.com', 587) 
             server.starttls(context=context)
-            server.login(from_addr, 'jniowfhqttnzurzd')
+            server.login(from_addr, 'ttt')
             server.send_message(msg, from_addr=from_addr, to_addrs=[to_addr])
             print(f"Mail has been sent to {bankName} with their file")
 
